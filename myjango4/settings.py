@@ -131,3 +131,5 @@ STATICFILES_DIRS=[
 
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'myjango4-production.up.railway.app']
+
+STATIC_ROOT = os.path.join(BASE_DIR, 'staticfiles')
