@@ -55,7 +55,7 @@ ROOT_URLCONF = 'myjango4.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [os.path.join(BASE_DIR, 'myreact/build')],
+        'DIRS': [os.path.join(BASE_DIR, 'myreact', 'build')],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,9 +123,8 @@ STATIC_URL = '/static/'
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'myreact/build/static'),
-]
+STATICFILES_DIRS = [os.path.join(BASE_DIR, 'myreact', 'build', 'static')]
+
 
 
 ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'myjango4-production.up.railway.app']
