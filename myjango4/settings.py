@@ -130,6 +130,4 @@ STATICFILES_DIRS=[
 ]
 
 
-ALLOWED_HOSTS = [
-    'localhost','myjango4-production.up.railway.app'
-]
+ALLOWED_HOSTS = ['localhost', '127.0.0.1', 'myjango4-production.up.railway.app']
