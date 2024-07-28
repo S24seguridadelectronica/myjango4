@@ -1,0 +1,21 @@
+.features {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .features-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    flex: 1;
+    margin: 10px;
+    min-width: 200px;
+  }
+  
+  .feature h3 {
+    color: #ff7f50;
+  }
+  
