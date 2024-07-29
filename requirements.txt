@@ -1,5 +1,4 @@
 asgiref==3.8.1
-Django==5.0.7
 waitress==2.1.2
 gunicorn==22.0.0
 packaging==24.1
