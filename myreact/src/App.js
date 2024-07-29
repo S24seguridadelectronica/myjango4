@@ -4,14 +4,16 @@ import Header from './components/Header';
 import Features from './components/Features';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
-import ProductsServices from './components/ProductsServices'; // Importa el nuevo componente
+import ProductsServices from './components/ProductsServices'; // Importa el componente ProductsServices
+import ImageCarousel from './components/ImageCarousel'; // Importa el componente ImageCarousel
 
 function App() {
   return (
     <div className="App">
       <Header />
-      <ProductsServices /> {/* Agrega el nuevo componente aquí */}
+      <ProductsServices />
       <Features />
+      <ImageCarousel /> {/* Agrega el componente ImageCarousel aquí */}
       <Contact />
       <Footer />
     </div>

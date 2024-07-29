@@ -1,0 +1,12 @@
+/* ImageCarousel.css */
+.image-carousel {
+    width: 100%;
+    max-width: 1200px; /* Ajusta según sea necesario */
+    margin: 0 auto;
+  }
+  
+  .image-carousel img {
+    width: 100%;
+    height: auto;
+  }
+  
