@@ -1,7 +1,7 @@
-// src/components/Header.js
 import React from 'react';
 import './Header.css';
 import cameraImage from '../images/1.jpg'; // Asegúrate de que la ruta sea correcta
+import WhatsAppButton from './WhatsAppButton'; // Importa el componente de WhatsApp
 
 const Header = () => {
   return (
@@ -15,6 +15,9 @@ const Header = () => {
           <li>Equipos de alta calidad</li>
           <li>Presupuestos personalizados</li>
         </ul>
+      </div>
+      <div className="whatsapp-button-container">
+        <WhatsAppButton /> {/* Añade el botón de WhatsApp aquí */}
       </div>
       <div className="image-section">
         <img src={cameraImage} alt="Cámara de Seguridad" />

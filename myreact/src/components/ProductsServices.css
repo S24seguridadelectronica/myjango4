@@ -1,0 +1,25 @@
+/* src/components/ProductsServices.css */
+.products-services {
+  text-align: center;
+  padding: 20px;
+}
+
+.images-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.product-item {
+  width: 45%;
+  margin: 10px;
+  text-align: center;
+}
+
+.product-image {
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
