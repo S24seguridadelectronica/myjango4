@@ -1,1 +1,1 @@
-web: gunicorn myjango4.wsgi --bind 0.0.0.0:$PORT
+web: python -m waitress --host 0.0.0.0 --port $PORT myjango4.wsgi:application
