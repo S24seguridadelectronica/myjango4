@@ -10,7 +10,7 @@ function Features() {
           <h2>Nuestras Ventajas</h2>
           <div className="features-list">
             <div className="feature">
-              <h3>Alta Calidad</h3>
+              <h3>Alta Caliad</h3>
               <p>Cámaras de alta resolución para una vigilancia clara y precisa.</p>
             </div>
             <div className="feature">
