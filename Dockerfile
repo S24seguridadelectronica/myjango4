@@ -5,9 +5,11 @@ FROM node:16 AS build
 WORKDIR /app
 
 # Copia los archivos del proyecto al contenedor
-COPY package.json package-lock.json ./
+COPY myreact/package.json myreact/package-lock.json ./
 RUN npm install
-COPY . ./
+
+# Copia el resto de los archivos del proyecto al contenedor
+COPY myreact ./
 
 # Construye la aplicación
 RUN npm run build
