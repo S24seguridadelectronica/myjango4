@@ -1,8 +1,11 @@
+// src/components/ImageCarousel.js
 import React from 'react';
 import Slider from 'react-slick';
-import './ImageCarousel.css'; // Asegúrate de tener los estilos necesarios
+import './ImageCarousel.css';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
-// Importa las imágenes
+// Imágenes para el carrusel
 import image5 from '../images/5.jpg';
 import image6 from '../images/6.jpg';
 import image7 from '../images/7.jpg';
@@ -23,6 +26,8 @@ function ImageCarousel() {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000
   };
 
   const images = [
