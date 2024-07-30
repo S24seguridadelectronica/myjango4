@@ -12,3 +12,4 @@ __pycache__/
 *.log
 media/
 staticfiles/
+node_modules
