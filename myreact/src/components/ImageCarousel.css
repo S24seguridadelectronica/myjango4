@@ -1,12 +1,16 @@
-/* ImageCarousel.css */
+/* src/components/ImageCarousel.css */
 .image-carousel {
-    width: 100%;
-    max-width: 1200px; /* Ajusta según sea necesario */
-    margin: 0 auto;
-  }
-  
-  .image-carousel img {
-    width: 100%;
-    height: auto;
-  }
-  
+  width: 100%; /* Ocupa todo el ancho disponible */
+  margin: 0 auto;
+}
+
+.image-carousel .slick-slide {
+  display: flex;
+  justify-content: center; /* Centra las imágenes en cada slide */
+}
+
+.image-carousel .slick-slide img {
+  width: calc(100% - 20px); /* Ajusta el ancho de las imágenes para dejar espacio para el margen */
+  height: auto; /* Mantiene la proporción de la imagen */
+  margin: 0 10px; /* Espacio entre las imágenes */
+}

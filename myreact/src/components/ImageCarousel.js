@@ -24,10 +24,12 @@ function ImageCarousel() {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 1,
+    slidesToShow: 4, // Muestra 4 imágenes a la vez
     slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 3000
+    autoplay: true, // Activa el autoplay
+    autoplaySpeed: 2000, // Tiempo entre transiciones en milisegundos
+    centerMode: true, // Activa el modo centrado
+    centerPadding: '10px' // Espacio alrededor de las imágenes centradas
   };
 
   const images = [
