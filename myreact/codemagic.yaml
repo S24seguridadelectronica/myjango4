@@ -1,0 +1,22 @@
+workflows:
+  build_android:
+    name: Build Android
+    max_build_duration: 60
+    environment:
+      vars:
+        VERSION_NAME: 1.0.$BUILD_NUMBER
+        VERSION_CODE: $BUILD_NUMBER
+    scripts:
+      - name: Install dependencies
+        script: yarn install
+      - name: Build APK
+        script: |
+          cd android
+          ./gradlew assembleRelease
+    artifacts:
+      - android/app/build/outputs/apk/release/app-release.apk
+    publishing:
+      email:
+        recipients:
+  - s24hseguridad@gmail.com
+
