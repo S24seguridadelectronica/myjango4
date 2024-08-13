@@ -15,13 +15,12 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-  "start": "set HOST=127.0.0.1 && react-scripts start",
-  "build": "react-scripts build",
-  "test": "react-scripts test",
-  "eject": "react-scripts eject",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build"
-
+    "start": "set HOST=127.0.0.1 && react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --watchAll=false",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
