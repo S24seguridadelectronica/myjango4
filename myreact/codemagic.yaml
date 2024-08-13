@@ -3,12 +3,15 @@ workflows:
     name: Build Android
     max_build_duration: 60
     environment:
-      vars:
-        VERSION_NAME: 1.0.$BUILD_NUMBER
-        VERSION_CODE: $BUILD_NUMBER
+      node: 14
+      android:
+        image: latest
     scripts:
       - name: Install dependencies
         script: yarn install
+      # Omitir pruebas para verificar si el problema está en las pruebas
+      # - name: Run tests
+      #   script: yarn test
       - name: Build APK
         script: |
           cd android
@@ -18,5 +21,4 @@ workflows:
     publishing:
       email:
         recipients:
-  - s24hseguridad@gmail.com
-
+          - s24hseguridad@gmail.com
