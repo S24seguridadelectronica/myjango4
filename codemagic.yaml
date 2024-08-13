@@ -1,10 +1,9 @@
+version: 1.0
 workflows:
   build_android:
     name: Build Android
     max_build_duration: 60
     environment:
-      android:
-        image: latest
       vars:
         VERSION_NAME: 1.0.$BUILD_NUMBER
         VERSION_CODE: $BUILD_NUMBER
